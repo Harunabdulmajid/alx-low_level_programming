@@ -1,6 +1,6 @@
 #include <stdio.h> /* No description for main */
 
-int main(void)
+int main(void) /* main has no value */
 
 {
 	printf("with proper grammar, but the outcome is a piece of art.\n");
