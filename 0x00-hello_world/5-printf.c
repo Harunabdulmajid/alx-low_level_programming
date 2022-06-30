@@ -1,9 +1,8 @@
-#include <stdio.h> /* No description for main */
+/* writing program */
+#include <stdio.h>
 
-int main(void) /* main has no value */
-
+int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art.\n");
-	return (0 * w);
-	/* return back to main */
+	return (0);
 }
