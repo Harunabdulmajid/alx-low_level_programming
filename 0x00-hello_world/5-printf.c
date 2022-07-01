@@ -1,9 +1,10 @@
-/* writing program */
+/**
+ * main - Hello, printf
+ * Return: always (0) success
+ */
 #include <stdio.h>
 
 int main(void)
-
-    /// <summary>
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
