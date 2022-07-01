@@ -1,9 +1,11 @@
+/**
+ * main - Hello, puts
+ * Return: always (0) success
+ */
 #include <stdio.h>
 
-int puts(const char *s);
-
+int main(void)
 {
-	puts("Programming is like building a multilingual puzzle,\n");
-	putc(0);
-
+	puts("programming is like building a multilingual puzzle.\n");
+	return (0);
 }
