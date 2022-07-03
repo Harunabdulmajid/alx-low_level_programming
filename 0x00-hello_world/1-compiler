@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S export $CFILE=$CFILE.o
+gcc $CFILE.o -S
