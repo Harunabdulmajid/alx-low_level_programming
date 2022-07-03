@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -wall -s $CFILE.o
+gcc -Wall -g -c $CFILE.c
