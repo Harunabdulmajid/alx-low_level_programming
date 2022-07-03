@@ -1,2 +1,4 @@
 #!/bin/bash
-gcc -Wall -g -c $CFILE.c
+gcc -S $CFILE=CFILE.o
+
+~
