@@ -4,15 +4,13 @@
  *
  * Return: Always 0
  */
-int main(void)
+void print_alphabet(void);
 {
-	for (int x = 'A'; x <= 'Z'; x++)
+	int m;
 
+	for m(m = 'a'; j <= 'z'; m++)
 	{
-		int lower_x = tolower(x);
-
-		putchar(lower_x);
+		_putchar(j);
 	}
-
-	return (0);
+	_putchar('\n');
 }
