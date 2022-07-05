@@ -4,14 +4,17 @@
  *
  * Return:
  */
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 {
-	int m;
-	int x;
+	int j;
+	int y;
 
-	for (x = 0; x < 10; x++)
+	for (y = 0; y < 10; y++)
 	{
-		_putchar(m);
+		for (j = 'a'; j <= 'z'; j++)
+		{
+			_putchar(j);
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
