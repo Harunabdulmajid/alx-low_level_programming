@@ -4,15 +4,15 @@
  *
  * Return: Always 0
  */
-void main(void)
+int main(void)
 {
-	int x = 'A';
-
-	while (x <= 'Z')
+	for (int x = 'A'; x <= 'Z'; x++)
 
 	{
-		x = tolower(x);
-		putchar(x);
-		x++;
+		int lower_x = tolower(x);
+
+		putchar(lower_x);
 	}
+
+	return (0);
 }
