@@ -1,17 +1,15 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * add - add the value of two interger
- * @int: paramter
+ * main - add the value of two interger
  * Return: Always 0
  */
-int add(int, int)
+int main(void)
 {
-	int (int x, int y);
-	int x = 2;
-	int y = 4;
+	int n;
 
-	n = (x + y);
+	n = add(10, 9);
+
 	printf("%d\n", n);
 	return (0);
 }
