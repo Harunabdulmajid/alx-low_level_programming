@@ -1,15 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - add the value of two interger
+ * add  - add the value of two interger
+ * @a:parameter
+ * @b:parameter
  * Return: Always 0
  */
-int main(void)
+int add(int a, int b)
 {
-	int n;
+	int sum = (a + b);
 
-	n = add(10, 9);
-
-	printf("%d\n", n);
+	_putchar((sum / 10) + '0');
+	_putchar((sum % 10) + '0');
 	return (0);
 }
