@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * print_numbers - print numbers
- * @x: parameter
- * Return: Success
+ * print_numbers - print numbeers
  */
 void print_numbers(void)
 {
