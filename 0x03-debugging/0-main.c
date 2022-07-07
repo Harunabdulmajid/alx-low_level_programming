@@ -9,6 +9,6 @@ int main(void)
 
 	i = 0;
 
-	postive_negative(i);
+	positive_or_negative(i);
 	return (0);
 }
