@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - testing to detect bug
+ * main - test functions that prints if intergeris positive or negative.
  * Return: always 0
  */
 int main(void)
