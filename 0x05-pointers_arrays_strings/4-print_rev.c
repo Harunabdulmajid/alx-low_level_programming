@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * print_rev - funtion that prints a string
  * @s: string to be printed
