@@ -4,6 +4,7 @@
 /**
  * print_rev - funtion that prints a string in reverse followed by a new line
  * Return: Always 0
+ * @s: string to be printed
  */
 void print_rev(char *s)
 {
@@ -13,7 +14,7 @@ void print_rev(char *s)
 	while (s[n] != '\0')
 		n++
 
-	for (i = n-1; i >= 0; i--)
+	for (i = n - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
