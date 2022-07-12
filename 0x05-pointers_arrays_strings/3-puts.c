@@ -3,7 +3,6 @@
 /**
  * _puts - function that prints a string
  * @str: parameter to puts function
- * Return: Always p
  */
 void _puts(char *str)
 {
