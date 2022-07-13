@@ -1,8 +1,24 @@
 #include "main.h"
 
 /**
- * print_array - function that prints n elements of an array of integers, followed by a new line
- * Return: Always 0
+ * print_array - function that prints n elements
+ * @a: int type array pointer
+ * @n: int type interger
+ * Description:numbers must be separated by commas
  */
 void print_array(int *a, int n)
 {
+	int i;
+
+	i = 0;
+
+	for (n--; n >= 0; n--, i++)
+	{
+		printf("%d", a[i]);
+		if (n > 0)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+}
