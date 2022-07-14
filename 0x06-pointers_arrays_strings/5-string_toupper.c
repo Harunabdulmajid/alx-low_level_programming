@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_toupper - changes lowercase to uppercase
+ * *string_toupper - changes lowercase to uppercase
  * @x: pointer
  * Return: Capitalized string
  */
