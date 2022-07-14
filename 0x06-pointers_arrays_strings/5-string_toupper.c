@@ -2,17 +2,18 @@
 
 /**
  * string_toupper - changes lowercase to uppercase
- * @str: pointer
+ * @x: pointer
  * Return: Capitalized string
  */
-char *string_toupper(char *str)
+char *string_toupper(char *x)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (x[i])
 	{
-		if (str[i] <= 'z' && str[i] >= 'a')
-			str[i] -= 32;
+		if (x[i] >= 97 && x[i] <= 122)
+		x[i] = x[i] - 32;
+		i++;
 	}
 	return (str);
 }
