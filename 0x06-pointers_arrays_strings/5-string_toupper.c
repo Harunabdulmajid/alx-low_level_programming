@@ -2,10 +2,10 @@
 
 /**
  * string_toupper - changes lowercase to uppercase
- * @x: string param
- * Return: string
+ * @str: pointer
+ * Return: Capitalized string
  */
-char *string_toupper(char *x)
+char *string_toupper(char *str)
 {
 	int i;
 
