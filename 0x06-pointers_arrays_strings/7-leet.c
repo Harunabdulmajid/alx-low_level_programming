@@ -1,27 +1,29 @@
 #include "main.h"
-#include <string.h>
+
 /**
  * *leet - encodes a string
- * @x: - param x
+ * @s: - param x
  * Return: a string
  */
-char *leet(char *x)
+char *leet(char *s)
 {
-	int a = 0, b, l = 5;
-	char tr[5] = {'A', 'E', 'O', 'T', 'L'};
-	char trw[5] = {'4', '3', '0', '7', '1'}
+	int i, ii;
 
-	while (x[a])
+	char s1[] = "aeotl";
+	char S1[] = "AEOTL";
+	char s2[] = "43071";
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		b = 0;
-
-		while (b < l)
+		for (ii = 0; ii < 5; ii++)
 		{
-			if (x[a] == tr[b] || x[a] - 32 == tr[b])
-				x[a] = trw[b];
-			b++;
+			if (s[i] == s1[ii] || s[i] == S1[ii])
+			{
+				s[i] = s2[ii];
+
+				break;
+			}
 		}
-		a++;
 	}
-	return (x);
+	return (s);
 }
