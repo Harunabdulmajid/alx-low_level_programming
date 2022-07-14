@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * string_toupper - changes lowercase to uppercase
  * @x: string param
