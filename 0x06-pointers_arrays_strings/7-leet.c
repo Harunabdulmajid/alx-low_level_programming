@@ -2,28 +2,27 @@
 
 /**
  * *leet - encodes a string
- * @s: - param x
+ * @x: - param x
  * Return: a string
  */
-char *leet(char *s)
+char *leet(char *x)
 {
-	int i, ii;
+	int a = 0, b, l = 5;
+	char tr[5] = {'A', 'E', 'O', 'T', 'L'};
+	char trw[5] = {'4', '3', '0', '7', '1'};
 
-	char s1[] = "aeotl";
-	char S1[] = "AEOTL";
-	char s2[] = "43071";
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (x[a])
 	{
-		for (ii = 0; ii < 5; ii++)
-		{
-			if (s[i] == s1[ii] || s[i] == S1[ii])
-			{
-				s[i] = s2[ii];
+		b = 0;
 
-				break;
-			}
+		while (b < l)
+		{
+			if (x[a] == tr[b] || x[a] - 32 == trw[b])
+			x[a] = trw[b];
+			b++;
 		}
+		a++;
 	}
-	return (s);
+	return (x);
 }
+
