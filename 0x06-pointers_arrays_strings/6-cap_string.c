@@ -19,7 +19,7 @@ char *cap_string(char *x)
 				x[a] = [a] - 32;
 			i++;
 		}
-		a++
+		a++;
 	}
 	return (x);
 }
