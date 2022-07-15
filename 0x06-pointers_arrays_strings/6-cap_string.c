@@ -16,7 +16,7 @@ char *cap_string(char *x)
 		while (i < len)
 		{
 			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
-				x[a] = [a] - 32;
+				s[a] = s[a] - 32;
 			i++;
 		}
 		a++;
