@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * *leet - encodes a string
  * @x: - param x
