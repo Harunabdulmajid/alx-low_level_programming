@@ -3,19 +3,27 @@
 /**
  * print_chessboard - prints the chessboard.
  * @a: row of array
- * @size: param1
- * Return: nothing
+ * Return: NULL
  */
-void print_chessboard(int *a, int size)
+void print_chessboard(char (*a)[8])
 {
-	int c, sum1 = 0, sum2 = 0;
+	int b, c;
 
-	for (c = 0; c < size; c++)
+	for (b = 0; b < 8; b++)
 	{
-		sum1 += a[(size + 1) * c];
-		sum2 += a[(size - 1) * (c + 1)];
-	}
-	{
-		printf("%d, %d\n" sum1, sum2);
+		for (c = 0; c < 8; c++)
+		{
+			if (c == 7)
+			{
+				_putchar([b][c]);
+
+				_putchar ('\n');
+			}
+			else
+
+				_putchar([b][c]);
+		}
 	}
 }
+
+
