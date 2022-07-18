@@ -6,7 +6,6 @@
  * @accept: bytes
  * Return: number of bytes
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
 	int a, b;
