@@ -1,19 +1,18 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _memcpy - copy memory area
- * @dest: memory area
- * @src: param1
- * @n: interger array
- * Return: string copied from source
+ * @dest - address of memory
+ * @src: size of memory
+ * @n: interger
+ * Return: dest
  */
+ 
 char *_memcpy(char *dest, char *src, unsigned int n)
-{
-	unsigned int b;
+	unsigned int a;
 
-	for (b = 0; b < n; b++)
-
-		dest[b] = src[b];
-
-		return (dest);
+	for (a = 0; a < n; a++)
+		dest[a] = src[a];
+	return (dest);
 }
