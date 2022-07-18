@@ -6,7 +6,7 @@
  * @dest: memory area
  * @src: param1
  * @n: interger array
- * Return: dest
+ * Return: string copied from source
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
