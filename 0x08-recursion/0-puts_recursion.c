@@ -6,8 +6,10 @@
  */
 void _puts_recursion(char *s)
 {
-	char s[] = "This is a string";
+	char s[] = ("First solve the problem. Then, write the code");
 
 	_puts_recurusion(s);
+	_putchar("%c", s);
 	_putchar('\n');
 }
+
