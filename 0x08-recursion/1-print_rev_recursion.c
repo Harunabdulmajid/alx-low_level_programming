@@ -6,6 +6,8 @@
  */
 void _print_rev_recursion(char *s)
 {
+	char s[] = "This is a string"
+
 	if (*s == '\0')
 		return;
 	_print_rev_recursion(s + 1);
