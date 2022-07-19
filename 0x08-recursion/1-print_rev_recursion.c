@@ -6,10 +6,10 @@
  */
 void _print_rev_recursion(char *s)
 {
-	char x[] = "This is a string";
-
 	if (*s == '\0')
+	{
 		return;
 	_print_rev_recursion(s + 1);
-	_putchar("%x", *s);
+	_putchar(*s);
+	}
 }
