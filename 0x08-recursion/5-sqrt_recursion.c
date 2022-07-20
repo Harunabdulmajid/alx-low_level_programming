@@ -26,7 +26,7 @@ int find_sqr(int a, int n)
  */
 int _sqrt_recursion(int n)
 {
-	int x = 0:
+	int x = 0;
 
 	if (x < 0)
 	{
@@ -34,6 +34,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (find_sqr(i, n));
+		return (find_sqr(x, n));
 	}
 }
