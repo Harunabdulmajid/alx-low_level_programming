@@ -1,45 +1,27 @@
 #include "main.h"
 /**
- * is_prime-number - returns 1 if its a prime number
- * @n: interger param
- * @i: int
- * Return: 0 or 1
+ * prime - searches for a prime number
+ * @a: number to be searched
+ * @b: numbers to be examined
+ * Return: a value that is prime or not
  */
-int is_prime(int n, int i)
+int prime(int a, int b)
 {
-	if (n % i == 0)
-	{
-		if (i == n)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
-	}
-	return (0 + is_prime(n, i + 1));
+	if (a <= 1 || a % b == 0)
+		return (0);
+	else if (a == b)
+		return (1);
+	else if (a > b)
+		prime(a, b + 1);
+	return (1);
 }
-/**
- * is_prime_number - identifies prime number
- * @n: given number
- * Return: 0 or 1
- */
-int _sqrt_recursion(int n)
-{
-	int i = 2;
 
-	if (n == 2)
-	{
-		return (0);
-	}
-	if (n < 0)
-	{
-		return (0);
-	}
-	if (n == 1)
-	{
-		return (0);
-	}
-	return (is_prime(n, i));
+/**
+ * is_prime_number - determine if its an interger or not
+ * @n: number to check
+ * Return: 0 if the number is a prime, 1 if its not
+ */
+int is_prime_number(int n)
+{
+	return (prime(n, 2));
 }
