@@ -10,19 +10,9 @@ int factorial(int n)
 	if (n <= 0)
 	{
 		return (-1);
-		return (n * factorial(n - 1));
+	else if (n == 0)
+		return (1);
+
+	return (n * factorial(n - 1));
 	}
-}
-
-/**
- * main - executes the factorial function
- * Return: 0
- */
-int main(void)
-{
-
-	int x;
-
-	x = factorial(0);
-	_putchar("%d\n", x);
 }
