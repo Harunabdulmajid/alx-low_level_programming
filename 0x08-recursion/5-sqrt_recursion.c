@@ -15,6 +15,10 @@ int find_sqr(int a, int n)
 	{
 		return (find_sqr(a + 1, n));
 	}
+	else if ((a * a) == n)
+	{
+		return (a);
+	}
 	return (-1);
 }
 
