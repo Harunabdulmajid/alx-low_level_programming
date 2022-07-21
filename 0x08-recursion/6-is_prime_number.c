@@ -4,7 +4,6 @@
 /**
  * is_prime_number - searches for a prime number
  * @n: number to be searched
- * @i: numbers to be examined
  * Return: a value that
  */
 
