@@ -29,4 +29,3 @@ int check_prime(int n, int resp)
 	else
 		return (check_prime(n, resp + 1));
 }
- 
