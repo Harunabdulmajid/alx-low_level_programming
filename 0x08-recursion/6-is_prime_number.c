@@ -1,51 +1,32 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * is_prime-number - searches for a prime number
+ * is_prime_number - searches for a prime number
  * @n: number to be searched
  * @i: numbers to be examined
  * Return: a value that
  */
 
-int is_prime(int n, int i)
+int is_prime_number(int n)
 {
-	if (n % i == 0)
-	{
-		if (i == n)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
-	}
-	return (0 + is_prime(n, i + 1));
+	return (check_prime(n, 2));
 }
 
 /**
- * is_prime_number - determines prime number
- *
- * @n: the number to check
- *
- * Return: 0 is its a prime number, 1 if its not
+ * check_prime - checking all number
+ * @n: int
+ * @resp: int
+ * Return: int
  */
 
-int is_prime_number(int n)
+int check_prime(int n, int resp)
 {
-	int n = 2;
-
-	if (n == 0)
-	{
+	if (resp >= n && n > 1)
+		return (1);
+	else if (n % resp == 0 || n <= 1)
 		return (0);
-	}
-	if (n < 0)
-	{
-		return (0);
-	}
-	if (n == 1)
-	{
-		return (0);
-	}
-	return (is_prime(n, i));
+	else
+		return (check_prime(n, resp + 1));
 }
+ 
