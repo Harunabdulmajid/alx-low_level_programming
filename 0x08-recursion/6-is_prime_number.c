@@ -1,21 +1,26 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * prime - searches for a prime number
- * @a: number to be searched
- * @b: numbers to be examined
+ * is_prime-number - searches for a prime number
+ * @n: number to be searched
+ * @i: numbers to be examined
  * Return: a value that
  */
-int primeSearcher(int a, int b)
-{
-	if (a <= 1 || a % b == 0)
-		return (0);
-	else if (a == b)
-		return (1);
-	else if (a > b)
-		primeSearcher(a, b + 1);
 
-	return (1);
+int is_prime(int n, int i)
+{
+	if (n % i == 0)
+	{
+		if (i == n)
+		{
+			return (1);
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (0 + is_prime(n, i + 1));
 }
 
 /**
@@ -28,5 +33,19 @@ int primeSearcher(int a, int b)
 
 int is_prime_number(int n)
 {
-	return (primeSearcher(n, 2));
+	int n = 2;
+
+	if (n == 0)
+	{
+		return (0);
+	}
+	if (n < 0)
+	{
+		return (0);
+	}
+	if (n == 1)
+	{
+		return (0);
+	}
+	return (is_prime(n, i));
 }
