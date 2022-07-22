@@ -5,14 +5,13 @@
  * main - prints its name
  * @argc: arguement count
  * @argv: arguement vector
+ * Return: 0
  */
-void (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int i;
+	(void)argc;
 
-	for (i = 0; i < argc; i++)
-	{
-		_putchar("%s", argv[i]);
-	}
-	_putchar('\n');
+	_putchar("%s\n", argv[0]);
+
+	return (0);
 }
