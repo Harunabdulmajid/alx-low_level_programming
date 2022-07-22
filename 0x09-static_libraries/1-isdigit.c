@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _isdigit - checks for digits
- * @c: an interger arguement
- * Return: always success
+ * isdigit - prints the digit
+ * @c: param
+ * Return: 0
  */
 int _isdigit(int c)
 {
-	return (c >= '0' && c <= '9');
+
 }
