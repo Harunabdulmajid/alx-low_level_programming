@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	for (c = 0; c <= argc; c++)
 	{}
-	_putchar("%d\n", c - 2);
+	printf("%d\n", c - 2);
 
 	return (0);
 }
