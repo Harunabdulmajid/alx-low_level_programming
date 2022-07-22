@@ -1,2 +1,1 @@
-This folder contains tasks on 0x09. C - Static libraries
-
+This folder contains tasks on 0x07. C - Even more pointers, arrays and strings
