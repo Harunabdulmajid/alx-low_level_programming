@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strdup - returns newly allocated space
  * @str: string given
