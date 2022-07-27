@@ -27,14 +27,14 @@ int _strlen(char *s)
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int I1, I2;
+	unsigned int i1, i2;
 	char *conc, *tmp;
 
 	if (!s1)
 		s1 = "";
 	else
-		I2 = _strlen(s2);
-	conc = malloc(I1 + I2 + 1);
+		i2 = _strlen(s2);
+	conc = malloc(i1 + i2 + 1);
 	if (!conc)
 		return (0);
 
