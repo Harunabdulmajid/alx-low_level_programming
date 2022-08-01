@@ -1,4 +1,4 @@
-#include "dog.h"
+#includ "dog.h"
 #include <stdio.h>
 /**
  * print_dog - prints a struct dog
@@ -16,5 +16,4 @@ void print_dog(struct dog *d)
 	if (d->owner == 0)
 		printf("Owner: (nil)\n");
 	else
-		printf("Owner: %s\n", d->owner);
-}
+		printf("Owner: %s\n", d->ow
