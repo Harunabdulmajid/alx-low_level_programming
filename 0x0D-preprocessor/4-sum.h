@@ -1,7 +1,8 @@
 #include <stdio.h>
 #define SUM(x,y) x + y
 /**
- * main - computes the name of two numbers
+ 
+* main - computes the name of two numbers
  * Return: 0 success
  */
 int main(void)
