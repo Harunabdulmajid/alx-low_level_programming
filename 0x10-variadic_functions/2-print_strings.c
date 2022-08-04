@@ -10,7 +10,7 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	var_list strings;
+	va_list strings;
 	char *str;
 	unsigned int index;
 
@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		str = va_arg(strings, char *);
 
 		if (str == NULL)
-			printf("(nil)";
+			printf("(nil)");
 					else
 					printf("%s", str);
 
