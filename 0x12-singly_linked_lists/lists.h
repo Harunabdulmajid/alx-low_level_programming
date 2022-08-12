@@ -1,6 +1,9 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LISTS_H
+#define LISTS_H
+
+#include <string.h>
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * struct list_s - singly link list
